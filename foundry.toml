@@ -1,0 +1,71 @@
+# See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
+[profile.default]
+src = 'contracts'
+script = 'scripts'
+out = 'out'
+libs = ['node_modules', 'lib', "dependencies"]
+
+
+test = 'test' # --> includes quick dirty live tests that fail often
+# test = 'test/foundry' # --> production ready, always works
+
+
+cache_path = 'cache_forge'
+cache = true
+# ignore_error_codes = ['too-many-warnings']
+threads = 20
+block_timestamp = 1734823000
+
+# solc = "0.8.26"
+optimizer = true
+sizes = true
+sparse_mode = true
+
+# cl = 933 / periphery = 2633 / accesshub = 200_000
+# non-cl invididual = 1633 / 
+# Voter and V3PoolDeployer needs optimizer = 200
+optimizer_runs = 300
+evm_version = 'cancun'
+
+via_ir = true
+
+# metadata for verification
+# bytecode_hash = "none"
+# cbor_metadata = true
+
+remappings = [
+    "@layerzerolabs/=node_modules/@layerzerolabs/",
+    "@layerzerolabs/lz-evm-protocol-v2/=node_modules/@layerzerolabs/lz-evm-protocol-v2/",
+    "@openzeppelin-contracts-upgradeable/=dependencies/@openzeppelin-contracts-upgradeable-5.1.0/",
+    "@openzeppelin-contracts/contracts/=dependencies/@openzeppelin-contracts-5.1.0/",
+    "@openzeppelin/contracts-upgradeable/=dependencies/@openzeppelin-contracts-upgradeable-5.1.0/",
+    "@openzeppelin/contracts/=dependencies/@openzeppelin-contracts-5.1.0/",
+    "erc4626-tests/=dependencies/erc4626-property-tests-1.0/",
+    "forge-std/=dependencies/forge-std-1.9.4/src/",
+    "permit2/=lib/permit2/",
+]
+fs_permissions = [{ access = "read", path = "./scripts/foundry/non-cl/config/" }, { access = "read-write", path = "./scripts/foundry/non-cl/output/" }, { access = "read", path = "./scripts/foundry/cl/core/config/" }, { access = "read-write", path = "./scripts/foundry/cl/core/output/" }, { access = "read", path = "./scripts/foundry/cl/periphery/config/" }, { access = "read-write", path = "./scripts/foundry/cl/periphery/output/" }, { access = "read", path = "./scripts/foundry/cl/universalRouter/config/" }, { access = "read-write", path = "./scripts/foundry/cl/universalRouter/output/" }, { access = "read", path = "./scripts/foundry/cl/gauge/config/" }, { access = "read-write", path = "./scripts/foundry/cl/gauge/output/" }, { access = "read", path = "./scripts/foundry/" }]
+
+
+[fuzz]
+max_test_rejects = 10000000
+runs = 1000
+
+[dependencies]
+"@openzeppelin-contracts" = "5.1.0"
+"@openzeppelin-contracts-upgradeable" = "5.1.0"
+forge-std = "1.9.4"
+erc4626-property-tests = { version = "1.0", git = "https://github.com/a16z/erc4626-tests.git", rev = "8b1d7c2ac248c33c3506b1bff8321758943c5e11" }
+
+[soldeer]
+remappings_location = "config"
+recursive_deps = true
+
+
+[rpc_endpoints]
+local = "http://localhost:8545"
+testnet = "${SONIC_RPC_TESTNET}"
+mainnet = "${SONIC_RPC}"
+
+[fmt]
+line_length = 120

@@ -1,0 +1,54 @@
+node_modules/
+.env
+dependencies/
+out/
+/scripts/batch_verify.sh
+# Hardhat files
+/cache
+/artifacts
+
+# TypeChain files
+/typechain
+/typechain-types
+
+# solidity-coverage files
+/coverage
+/coverage.json
+
+.DS_Store
+/bin
+.vscode
+/out
+/out/**
+
+broadcast/
+cache_forge/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+.coverage
+htmlcov/
+.env/
+.venv/
+env/
+venv/
+ENV/

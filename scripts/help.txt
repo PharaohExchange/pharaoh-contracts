@@ -1,0 +1,15 @@
+# deploy v3 base Avax
+forge script scripts/DeployBase.s.sol:DeployBase \
+    --rpc-url $AVAX_RPC \
+    --private-key $PRIVATE_KEY \
+    --broadcast \
+    --verify \
+    --etherscan-api-key $ETHERSCAN_V2_API_KEY
+
+# deploy periphery Avax
+forge script scripts/DeployPeriphery.s.sol:DeployPeriphery \
+    --rpc-url $AVAX_RPC \
+    --private-key $PRIVATE_KEY \
+    --broadcast \
+    --verify \
+    --etherscan-api-key $ETHERSCAN_V2_API_KEY
