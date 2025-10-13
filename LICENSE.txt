@@ -1,0 +1,47 @@
+Kingdom Business Source License 1.1 (kBUSL 1.1)
+Copyright (C) 2025 Social Unicorn Foundation LLC
+All Rights Reserved.
+
+This software is licensed under the Kingdom Business Source License 1.1 ("kBUSL"), a non-open source license. Use of this software is governed by the terms below.
+
+Use Restrictions:
+- You may copy, modify, create derivative works, redistribute, and use the software for non-production purposes only.
+- You may not deploy or use this software, or any derivative thereof, in production environments, including but not limited to mainnet, testnets, or sidechains, without explicit IP approval and a commercial license from the Licensor.
+
+Commercial Use:
+- If you wish to use the Licensed Work in production, you must obtain a commercial license from Social Unicorn Foundation LLC or an authorized reseller.
+
+License Termination:
+- Any unauthorized use — including unapproved production deployment — will automatically terminate your rights under this License for all versions of the Licensed Work.
+
+License Scope:
+- This License applies to each version of the Licensed Work independently.
+- All copies and derivative works must include this License text and comply with its terms.
+
+Change Date:
+October 31, 2028
+
+On the Change Date or the fourth anniversary of the public release of a given version (whichever is earlier), the Licensed Work will become governed by:
+
+Change License:
+GNU General Public License Version 2.0 or any later version
+
+Trademarks:
+This License does not grant rights to use any trademark, service mark, or logo of the Licensor except as expressly permitted by this License.
+
+Disclaimer:
+THE LICENSED WORK IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, AND TITLE.
+
+Covenants of Licensor:
+By using this License, the Licensor covenants to:
+1. Specify GPL v2.0 or later, or a compatible license, as the Change License.
+2. Specify any additional use grant, or "None".
+3. Specify a Change Date.
+4. Not modify this License in any other way.
+
+---
+
+For more information or to request a commercial license, contact:
+Social Unicorn Foundation LLC
+management@ramses.exchange
+https://ramses.xyz

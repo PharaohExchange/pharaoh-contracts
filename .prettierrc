@@ -1,0 +1,34 @@
+{
+  "plugins": ["prettier-plugin-solidity"],
+  "overrides": [
+    {
+      "files": "*.sol",
+      "options": {
+        "parser": "solidity-parse",
+        "semi": false,
+        "singleQuote": false,
+        "printWidth": 120,
+        "singleAttributePerLine": false,
+        "proseWrap": "preserve"
+      }
+    },
+    {
+      "files": "*.ts",
+      "options": {
+        "tabWidth": 4,
+        "semi": true,
+        "trailingComma": "all",
+        "useTabs": false
+      }
+    },
+    {
+      "files": "*.json",
+      "options": {
+        "tabWidth": 4,
+        "semi": false,
+        "trailingComma": "all",
+        "useTabs": false
+      }
+    }
+  ]
+}
